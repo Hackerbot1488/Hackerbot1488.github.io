@@ -13,6 +13,7 @@ body {
 }
 .content {
 	position: relative;
+	-webkit-user-select: none;
 }
 .content h2 {
 	position: absolute;
