@@ -1,0 +1,80 @@
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+.app {
+	padding-top: 5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.wrap {
+	width: 500px;
+}
+
+.select {
+	width: 100%;
+	z-index: 10000;
+	position: relative;
+}
+.select_open .select__dropdown {
+	display: block;
+}
+.select_open .select__input {
+	border-bottom: none;
+}
+.select_open .select__backdrop {
+	display: block;
+}
+.select__backdrop {
+	position: fixed;
+	z-index: -1;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	display: none;
+}
+.select__backdrop_visible {
+	display: block;
+}
+.select__input {
+	border: 1px solid #ccc;
+	height: 46px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	padding: 0 1rem;
+	cursor: pointer;
+	justify-content: space-between;
+}
+.select__dropdown {
+	position: absolute;
+	display: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	top: 46px;
+	left: 0;
+	right: 0;
+	max-height: 250px;
+	overflow-y: auto;
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.select__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.select__item {
+	margin: 0;
+	padding: 1rem;
+	border-bottom: 1px solid #ccc;
+}
+.select__item_selected {
+	background-color: bisque;
+}
+.select__item:hover {
+	background-color: #c4c4c4;
+	cursor: pointer;
+	transition: 0.15s background-color ease-in;
+}
