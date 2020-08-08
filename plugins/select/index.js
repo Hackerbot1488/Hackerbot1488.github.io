@@ -1,5 +1,5 @@
 import { Select } from './Select/select'
-import './styles/style.scss'
+// import './styles/style.scss' use if there are running parcel
 const select = new Select('#select', {
   placeholder: 'Select an element',
   selectedId: '2',
