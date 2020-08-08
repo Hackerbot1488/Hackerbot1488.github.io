@@ -21,7 +21,7 @@ const getTemplate = (placeholder = 'Select an element', data = [], selectedId = 
     </div>
         `
 }
-export class Select {
+class Select {
   constructor(selector, options) {
     this.$el = document.querySelector(selector)
     this.options = options
