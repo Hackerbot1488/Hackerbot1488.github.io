@@ -312,8 +312,9 @@ button {
 	border: none;
 	position: absolute;
 	right: 0;
-	top: 50px;
-	transform: translateY(-50%);
+	top: 25%;
+	height: 37px;
+	transform: translateY(50%);
 	z-index: 99;
 	cursor: pointer;
 }
@@ -476,7 +477,7 @@ button {
 		margin-left: auto;
 	}
 	.button-next {
-		display: none;
+		display: block;
 	}
 }
 @media (max-width: 576px) {
